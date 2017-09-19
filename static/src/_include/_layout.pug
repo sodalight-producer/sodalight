@@ -1,0 +1,25 @@
+doctype html
+block vars
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+		script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+		script(src="js/menu.js")
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/style.css")
+		title= pagetitle + ' - Sodalight'
+	body
+		nav#slide_menu
+			include _navi.pug
+		header
+			.header_wrap
+				a#button: i.fa.fa-bars
+				h2= pagetitle
+				h1.nosp: a(href="index.html"): img(src="img/logo.png")
+		block sections
+			p ここに本文を書く
+		footer.nosp
+			span (c)2017 Sodalight

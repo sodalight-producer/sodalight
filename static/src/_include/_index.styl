@@ -1,0 +1,23 @@
+#index_wrap
+	max-width 1200px
+	height calc(100% - 187px)
+	margin 2em auto
+	display flex
+	justify-content center
+  align-items center
+#index_left, #index_right
+	width 50%
+	height 100%
+	box-sizing border-box
+	@media (max-width tab)
+		width 100%
+#index_left
+	border 10px solid accentcolor
+#index_right_button
+	position relative
+	top 50%
+	transform translateY(-50%)
+	a
+		margin 0 auto 2em
+		&:last-of-type
+			margin-bottom 0
